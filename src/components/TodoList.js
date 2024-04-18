@@ -60,6 +60,7 @@ const TodoList = () => {
     });
     setToDoList(newList);
   }
+  const test = 1;
   return (
     <div id='container'>
       <div id='header'>
