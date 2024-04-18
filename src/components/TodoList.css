@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+}
+
+* {
+  color: #545454;
+  box-sizing: border-box;
+}
+
+.center {
+  text-align: center;
+}
+
+#container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+#title {
+  color: rgb(21, 87, 255);
+  font-size: 25px;
+  letter-spacing: -0.04em;
+}
+
+#submitBox {
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
+}
+
+#submitBox>input {
+  width: 340px;
+  margin: 0 10px 0 58px;
+  border: 1px solid #c4c4c4;
+  border-radius: 50px;
+  font-size: 16px;
+  letter-spacing: -0.07em;
+  padding: 0 20px;
+}
+
+#submitBox>input:focus {
+  outline: none;
+  border: 1px solid rgb(41, 101, 255);
+
+}
+
+#submitBox>button {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 23px;
+  background: linear-gradient(rgb(21, 87, 255), rgba(11, 174, 255, 0.903) 200%);
+  width: 43px;
+  height: 43px;
+  border: 0;
+  border-radius: 50%;
+}
+
+#header {
+  margin-bottom: 37px;
+}
+
+.item {
+  font-size: 18px;
+  padding: 0 0 15px 0;
+  margin: 15px 0;
+  border-bottom: 1px solid #d3d3d3;
+  width: 479px;
+  position: relative;
+  left: 137px;
+  display: flex;
+  flex-direction: row;
+}
+
+.textBox>label {
+  margin-left: 8px;
+  letter-spacing: -0.02em;
+}
+
+#footer {
+  margin-top: 23px;
+}
+
+.btnBox > button {
+  margin-left: 8px;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: -0.07em;
+  background-color: #ffffff;
+  padding: 5px 11px;
+  border: 1px solid #bfbfbf;
+  border-radius: 2px;
+}
+
+.textBox {
+  width: 371px;
+}
+
+#blankMessage {
+  position: relative;
+  left: 8px;
+  color: #aaa;
+}
