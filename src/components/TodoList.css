@@ -41,7 +41,6 @@ body {
 #submitBox>input:focus {
   outline: none;
   border: 1px solid rgb(41, 101, 255);
-
 }
 
 #submitBox>button {
@@ -86,6 +85,11 @@ body {
   border-right: 0;
   font-family: 'SUIT-Regular';
   font-size: 18px;
+}
+
+.editBox:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(41, 101, 255);
 }
 
 #footer {
