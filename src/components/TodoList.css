@@ -75,6 +75,18 @@ body {
   margin-left: 8px;
   letter-spacing: -0.02em;
 }
+.editBox {
+  width: 170px;
+  margin-left: 8px;
+  letter-spacing: -0.02em;
+  font-size: 17px;
+  border: 1px solid #aaa;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-family: 'SUIT-Regular';
+  font-size: 18px;
+}
 
 #footer {
   margin-top: 23px;

@@ -60,7 +60,6 @@ const TodoList = () => {
     });
     setToDoList(newList);
   }
-  const test = 2;
   return (
     <div id='container'>
       <div id='header'>
@@ -77,10 +76,11 @@ const TodoList = () => {
               <div className='item' key={item.id}>
                 <div className='textBox'>
                   <input type='checkbox' id={item.id} onChange={() => handleCheck(item.id)} />
-                  <label htmlFor={item.id}
+                  {/* <label htmlFor={item.id}
                     style={{color: item.checked && 'rgb(21, 87, 255)',
                   textDecoration: item.checked && 'line-through'}}
-                  >{item.text}</label>
+                  >{item.text}</label> */}
+                  <input type='text' className='editBox' value={item.text}/>
                 </div>
                 <div className='btnBox'>
                   <button type='button' onClick={() => handleDelete()}>수정</button>
