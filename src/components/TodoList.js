@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
 import "./TodoList.css";
+import Paging from './Paging';
 
 const TodoList = () => {
   const [toDoList, setToDoList] = useState([]);
@@ -152,6 +153,7 @@ const TodoList = () => {
       </div>
       <div id='footer'>
         {!toDoList[0] && <div className='center' id='blankMessage'>toDoList가 비어있습니다.</div>}
+          <Paging />
       </div>
     </div>
   );

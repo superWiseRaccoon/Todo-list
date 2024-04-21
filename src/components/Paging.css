@@ -1,0 +1,27 @@
+li {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+ul>li:nth-last-child(1),li:nth-last-child(2),li:nth-child(1),li:nth-child(2) {
+  font-size: 27px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.active {
+  background-color: rgb(41, 101, 255);
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.active>a {
+  line-height: 35px;
+  color: white;
+}
