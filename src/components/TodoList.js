@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
 import "./TodoList.css";
 import Paging from './Paging';
@@ -13,7 +13,10 @@ const TodoList = () => {
     editOn: false,
     editText: ''
   });
-
+  const [page, setPage] = useState(1);
+  const [pages, setPages] = useState([]);
+  const itemsCountPerPage = 7;
+  
   const handleInput = (e) => {
     const newInput = {
       ...toDo,
@@ -109,6 +112,29 @@ const TodoList = () => {
     });
     setToDoList(newList);
   }
+
+  const handleChangePage  = (num) => {
+    let inputList = [];
+    setPage(num);
+    for (let i = (num-1) * itemsCountPerPage; i < num * itemsCountPerPage; i++) {
+      inputList.push(toDoList[i]);
+      if(i === toDoList.length-1) {
+        break;
+      };
+    }
+    setPages(inputList);
+  }
+
+  useEffect (() => {
+    if(toDoList[0]) {
+      if(toDoList[(page-1)*itemsCountPerPage]) {
+        handleChangePage(page);        
+      } else {
+        handleChangePage(page-1);
+      }
+    }
+  }, [toDoList]);
+
   return (
     <div id='container'>
       <div id='header'>
@@ -120,7 +146,7 @@ const TodoList = () => {
       </div>
       <div id='body'>
         <div id='listBox'>
-          {toDoList.map((item) => {
+          {toDoList[0] && pages.map((item,index) => {
             return (
               <div className='item' key={item.id}>
                 <div className='textBox'>
@@ -152,8 +178,11 @@ const TodoList = () => {
         </div>
       </div>
       <div id='footer'>
-        {!toDoList[0] && <div className='center' id='blankMessage'>toDoList가 비어있습니다.</div>}
-          <Paging />
+        {toDoList[0] ?
+          <Paging totalItemsCount={toDoList.length} page={page} handleChangePage={handleChangePage} itemsCountPerPage={itemsCountPerPage}/>
+          :
+          <div className='center' id='blankMessage'>toDoList가 비어있습니다.</div>
+        }
       </div>
     </div>
   );

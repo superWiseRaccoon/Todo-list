@@ -20,6 +20,8 @@ body {
   color: rgb(21, 87, 255);
   font-size: 25px;
   letter-spacing: -0.04em;
+  position: relative;
+  left: 7px;
 }
 
 #submitBox {
@@ -47,7 +49,7 @@ body {
   color: rgb(255, 255, 255);
   cursor: pointer;
   font-size: 23px;
-  background: linear-gradient(rgb(21, 87, 255), rgba(11, 174, 255, 0.903) 200%);
+  background: linear-gradient(rgb(21, 87, 255), rgba(11, 174, 255, 0.903) 270%);
   width: 43px;
   height: 43px;
   border: 0;
@@ -65,7 +67,7 @@ body {
   border-bottom: 1px solid #d3d3d3;
   width: 479px;
   position: relative;
-  left: 137px;
+  left: 131px;
   display: flex;
   flex-direction: row;
 }

@@ -1,27 +1,38 @@
-li {
-  display: inline-block;
-  font-size: 18px;
-  margin: 0 10px;
+ul {
+  padding: 0;
+  text-align: center;
+  position: relative;
+  left: 10px;
 }
 
-ul>li:nth-last-child(1),li:nth-last-child(2),li:nth-child(1),li:nth-child(2) {
-  font-size: 27px;
+li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
 a {
+  font-size: 17px;
   text-decoration-line: none;
+  color: rgb(21, 87, 255);
 }
 
+
+
 .active {
-  background-color: rgb(41, 101, 255);
-  width: 35px;
-  height: 35px;
+  background: linear-gradient(rgb(21, 87, 255), rgba(11, 174, 255, 0.903) 270%);  
+  width: 43px;
+  height: 43px;
   text-align: center;
   vertical-align: middle;
   border-radius: 50%;
 }
 
 .active>a {
-  line-height: 35px;
+  line-height: 43px;
   color: white;
+}
+
+li:nth-last-child(1)>a,li:nth-last-child(2)>a,li:nth-child(1)>a,li:nth-child(2)>a {
+  font-size: 26px;
+  line-height: 43px;
 }
