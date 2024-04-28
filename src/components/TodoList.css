@@ -67,7 +67,7 @@ body {
   border-bottom: 1px solid #d3d3d3;
   width: 479px;
   position: relative;
-  left: 131px;
+  left: 134px;
   display: flex;
   flex-direction: row;
 }
@@ -119,6 +119,6 @@ body {
 
 #blankMessage {
   position: relative;
-  left: 8px;
+  left: 14px;
   color: #aaa;
 }

@@ -150,7 +150,9 @@ const TodoList = () => {
             return (
               <div className='item' key={item.id}>
                 <div className='textBox'>
-                  <input type='checkbox' id={item.id} onChange={() => handleCheck(item.id)} />
+                  <input type='checkbox' id={item.id} onChange={() => handleCheck(item.id)} 
+                  checked={item.checked ? true : false}
+                  />
                   {
                     item.editOn ?
 

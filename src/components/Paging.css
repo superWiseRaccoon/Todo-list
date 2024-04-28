@@ -19,17 +19,17 @@ a {
 
 
 .active {
-  background: linear-gradient(rgb(21, 87, 255), rgba(11, 174, 255, 0.903) 270%);  
-  width: 43px;
-  height: 43px;
-  text-align: center;
   vertical-align: middle;
-  border-radius: 50%;
 }
 
 .active>a {
   line-height: 43px;
+  display: block;
   color: white;
+  background: linear-gradient(rgb(21, 87, 255), rgba(11, 174, 255, 0.903) 270%);  
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;  
 }
 
 li:nth-last-child(1)>a,li:nth-last-child(2)>a,li:nth-child(1)>a,li:nth-child(2)>a {
